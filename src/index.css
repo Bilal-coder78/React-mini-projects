@@ -41,8 +41,15 @@ body {
   font-family:"Poppins", sans-serif ;
 }
 
-.app{
+/* For Weather app */
+/* .app{
   min-height: 100vh;
   display: grid;
   background: #e2d4ff;
+} */
+
+/* For Form */
+body{
+  /* background: linear-gradient(#2A00B7,#42006C); */
+  background: rgb(40, 40, 134);
 }

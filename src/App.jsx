@@ -1,4 +1,5 @@
 import Counter from "./components/Counter App/Counter"
+import Form from "./components/Form/Form"
 import Mytodo from "./components/TodoList/Mytodo"
 import Weather from "./components/Weather App/Weather"
 
@@ -6,10 +7,11 @@ import Weather from "./components/Weather App/Weather"
 function App() {
 
   return (
-    <div className="app">
+    <div className="">
         {/* <Counter/> */}
         {/* <Mytodo/> */}
-        <Weather/>
+        {/* <Weather/> */}
+        <Form/>
     </div>
   )
 }

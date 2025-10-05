@@ -1,0 +1,76 @@
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 75px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+.input img{
+    margin: 0 25px;
+}
+
+.input input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #797979;
+    font-size: 19px;
+}
+
+.forgot-password{
+    margin-top: 20px;
+    color: #797979;
+    font-size: 19px;
+}
+
+span{
+    color: #3c009d;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59px;
+    width: 220px;
+    color: #fff;
+    background-color: #3c009d;
+    border-radius: 50px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contanier{
+    min-height: 80vh;
+    background: #fff;
+    width: 600px;
+    margin:40px auto;
+    padding-top: 40px;
+    border-radius: 25px;
+}
+
+.header h2{
+    color: #3c009d;
+}
+
+.underline{
+    height: 5px;
+    width: 60px;
+    background: #3c009d;
+    border-radius: 9px;
+}
