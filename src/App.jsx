@@ -1,11 +1,13 @@
 import Counter from "./components/Counter App/Counter"
+import Mytodo from "./components/TodoList/Mytodo"
 
 
 function App() {
 
   return (
     <>
-        <Counter/>
+        {/* <Counter/> */}
+        <Mytodo/>
     </>
   )
 }
