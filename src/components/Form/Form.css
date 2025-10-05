@@ -39,7 +39,7 @@ span{
     margin: 40px auto;
 }
 
-.buttons button{
+.buttons .submit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +55,10 @@ span{
     font-weight: 600;
 }
 
+.buttons .submit.gray{
+    background: #EAEAEA;
+    color: #676767;
+}
 .contanier{
     min-height: 80vh;
     background: #fff;
