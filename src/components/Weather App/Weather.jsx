@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Weather.css"
-import Search_icon from "../assets/search.png"
-import Cloud_icon from "../assets/cloud.png"
-import Drizzle_icon from "../assets/drizzle.png"
-import Rain_icon from "../assets/rain.png"
-import Snow_icon from "../assets/snow.png"
-import Clear_icon from "../assets/clear.png"
-import Humidity_icon from "../assets/humidity.png"
-import Wind_icon from "../assets/wind.png"
+import Search_icon from "../../assets/search.png"
+import Cloud_icon from "../../assets/cloud.png"
+import Drizzle_icon from "../../assets/drizzle.png"
+import Rain_icon from "../../assets/rain.png"
+import Snow_icon from "../../assets/snow.png"
+import Clear_icon from "../../assets/clear.png"
+import Humidity_icon from "../../assets/humidity.png"
+import Wind_icon from "../../assets/wind.png"
 
 function Weather() {
     let inputRef = useRef()
