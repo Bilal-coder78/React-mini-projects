@@ -49,6 +49,7 @@ body {
 } */
 
 /* For Form */
-/* body{
+body{
+  /* background: linear-gradient(#2A00B7,#42006C); */
   background: rgb(40, 40, 134);
-} */
+}

@@ -1,0 +1,31 @@
+.Search-area input{
+    width: 380px;
+    outline: none;
+    border: none;
+}
+
+.Search-area svg{
+    width: 60px;
+    height: 60px;
+}
+
+.Box-data{
+    width: 250px;
+}
+
+.Box-data img{
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Box-data .title{
+    height: 52px;
+    overflow: hidden;
+    color: #f5c518;
+}
+
+.Box-data .rating{
+    color: #ffea00;
+}
