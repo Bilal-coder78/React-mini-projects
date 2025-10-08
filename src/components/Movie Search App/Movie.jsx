@@ -5,7 +5,7 @@ import MovieImg from "../../assets/Movie_img.jpg"
 
 function Movie() {
     const [movie, setMovie] = useState([])
-    const [query,setQuery] = useState("")
+    const [query, setQuery] = useState("")
     const API_ID = "a86a50adcf9bfab796bd97a2f5e12b7d";
     const Search = async (search) => {
         let url = `https://api.themoviedb.org/3/search/movie?api_key=${API_ID}&query=${search}`;
@@ -16,7 +16,7 @@ function Movie() {
         setMovie(data.results)
     }
 
-    const FetchAll = async ()=>{
+    const FetchAll = async () => {
         let url = `https://api.themoviedb.org/3/movie/popular?api_key=${API_ID}`;
         const response = await fetch(url);
         const data = await response.json();
@@ -27,8 +27,8 @@ function Movie() {
         FetchAll();
     }, [])
 
-    const handleSearch = (e)=>{
-        if(query.trim() !== ""){
+    const handleSearch = (e) => {
+        if (query.trim() !== "") {
             Search(query)
             setTimeout(() => {
                 setQuery('')
@@ -36,12 +36,12 @@ function Movie() {
         }
     }
 
-    const handleChange=(e)=>{
+    const handleChange = (e) => {
         setQuery(e.target.value)
     }
 
-    const handleKey =(e)=>{
-        if(e.key === "Enter"){
+    const handleKey = (e) => {
+        if (e.key === "Enter") {
             handleSearch()
         }
     }
@@ -57,8 +57,8 @@ function Movie() {
             <div className='my-3 container d-flex align-items-center justify-content-center'>
                 <header className='d-flex flex-column align-items-center justify-content-center'>
                     <h1 className='fs-1 fw-medium text-white'>Movies App</h1>
-                    <div className='Search-area d-flex gap-3 align-items-center justify-content-center my-3'>
-                        <input type="text" name="" className='p-3 rounded-5 fs-5' value={query} onChange={handleChange} placeholder='Search' onKeyDown={handleKey} />
+                    <div className='Search-area d-flex gap-md-3 gap-1 align-items-center justify-content-center my-3'>
+                        <input type="text" name="" className='p-3 rounded-5 fs-5' value={query} onChange={handleChange} placeholder='Search movie' onKeyDown={handleKey} />
                         <CiSearch className='bg-white text-muted rounded-5' onClick={handleSearch} />
                     </div>
                 </header>
@@ -78,15 +78,15 @@ function Box({ title, ratings, image }) {
         ? `https://image.tmdb.org/t/p/w200${image}`
         : MovieImg;
     return (
-            <div className='Box-data text-white my-4'>
-                <img className='' src={imageUrl} alt="" />
-                <div className='d-flex justify-content-center flex-column align-items-center'>
-                    <h2 className='fs-4 title mt-2'>{title.length > 25 ? title.slice(0,25) + "...": title}</h2>
-                    <div className='d-flex align-items-center justify-content-center gap-3 my-3'>
-                        <h2 className='fs-4 pt-1'>Ratings:</h2>
-                        <div className='fs-3 rating'>{ratings}</div>
-                    </div>
+        <div className='Box-data text-white my-4'>
+            <img className='' src={imageUrl} alt="" />
+            <div className='d-flex justify-content-center flex-column align-items-center'>
+                <h2 className='fs-4 title mt-2'>{title.length > 25 ? title.slice(0, 25) + "..." : title}</h2>
+                <div className='d-flex align-items-center justify-content-center gap-3 my-3'>
+                    <h2 className='fs-4 pt-1'>Ratings:</h2>
+                    <div className='fs-4 rating'>{ratings}</div>
                 </div>
             </div>
+        </div>
     )
 }
