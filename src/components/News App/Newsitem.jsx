@@ -1,13 +1,14 @@
 import React from 'react'
+import image from "../../assets/OIP.webp"
 
-function Newsitem() {
+function Newsitem({title,description,src,url}) {
     return (
-        <div className="card my-2 mx-2 d-inline-block" style={{width: "18rem"}}>
-            <img src="..." className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+        <div className="card my-2 px-2 py-2 mx-2 d-inline-block" style={{width: "18rem",height:""}}>
+            <img src={src?src:image} className="card-img-top" style={{height:"180px"}} />
+                <div className="card-body" style={{height:"210px"}}>
+                    <h5 className="card-title">{title.slice(0,20)}</h5>
+                    <p className="card-text">{description.slice(0,90)}</p>
+                    <a href={url} className="btn btn-primary">Read More</a>
                 </div>
         </div>
     )

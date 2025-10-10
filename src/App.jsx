@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Counter from "./components/Counter App/Counter"
 import Form from "./components/Form/Form"
 import Movie from "./components/Movie Search App/Movie"
@@ -9,6 +10,7 @@ import Weather from "./components/Weather App/Weather"
 
 
 function App() {
+      const [category,setCategory] = useState("general")
 
   return (
     <div className="">
@@ -17,9 +19,8 @@ function App() {
         {/* <Weather/> */}
         {/* <Form/> */}
         {/* <Movie/> */}
-        <Nav/>
-        <Newsbord/>
-        {/* <Newsitem/> */}
+        <Nav setCategory={setCategory}/>
+        <Newsbord category={category}/>
     </div>
   )
 }
