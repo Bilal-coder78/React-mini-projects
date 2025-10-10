@@ -9,17 +9,17 @@ import Weather from "./components/Weather App/Weather"
 
 
 function App() {
-      const [category,setCategory] = useState("general")
+  const [category, setCategory] = useState("general")
 
   return (
     <div className="">
-        {/* <Counter/> */}
-        {/* <Mytodo/> */}
-        {/* <Weather/> */}
-        {/* <Form/> */}
-        {/* <Movie/> */}
-        <Nav setCategory={setCategory}/>
-        <Newsbord category={category}/>
+      {/* <Counter/> */}
+      {/* <Mytodo/> */}
+      {/* <Weather/> */}
+      {/* <Form/> */}
+      {/* <Movie/> */}
+      <Nav setCategory={setCategory} />
+      <Newsbord category={category} />
     </div>
   )
 }
