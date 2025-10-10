@@ -11,7 +11,7 @@ function Nav({ setCategory }) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link pointer" onClick={() => setCategory("general")}>Business</a>
+                            <a className="nav-link pointer" onClick={() => setCategory("business")}>Business</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link pointer" onClick={() => setCategory("entertainment")}>Entertainment</a>
