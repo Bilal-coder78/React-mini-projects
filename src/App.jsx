@@ -13,7 +13,7 @@ function App() {
         {/* <Mytodo/> */}
         {/* <Weather/> */}
         {/* <Form/> */}
-        <Movie/>
+        {/* <Movie/> */}
     </div>
   )
 }
