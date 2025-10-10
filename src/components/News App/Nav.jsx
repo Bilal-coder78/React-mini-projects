@@ -11,22 +11,22 @@ function Nav({setCategory}) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("general")}>Business</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("general")}>Business</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("entertainment")}>Entertainment</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("entertainment")}>Entertainment</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("technology")}>Technology</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("technology")}>Technology</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("sports")}>Sports</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("sports")}>Sports</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("science")}>Science</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("science")}>Science</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=>setCategory("health")}>Health</a>
+                            <a className="nav-link pointer" onClick={()=>setCategory("health")}>Health</a>
                         </li>
                     </ul>
                 </div>

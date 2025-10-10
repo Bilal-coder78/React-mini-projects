@@ -21,7 +21,7 @@ function Newsbord({category}) {
             <div className='text-center fs-3'>Today <span className='bg-danger badge my-3'>News</span></div>
             {articles.map((v,i)=>{
                     return(
-                    <Newsitem key={i} title={v.title} description={v.description} src={v.urlToImage} url={v.url}/>
+                    <Newsitem key={i} title={v.title || "No title for that News"} description={v.description || "No description for that news"} src={v.urlToImage} url={v.url}/>
                     )
             })}
         </>
