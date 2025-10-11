@@ -21,11 +21,11 @@ function Newsbord({ category }) {
             <div className='text-center fs-3'>Today <span className='bg-danger badge my-3'>News</span></div>
             {articles.length === 0 ? <><h1 className='d-flex align-items-center justify-content-center mt-5'>Loading News...</h1></> :
                 <>
-                    <div class="container-fluid">
-                        <div class="row justify-content-center">
+                    <div className="container-fluid">
+                        <div className="row justify-content-center">
                             {articles.map((v, i) => {
                                 return (
-                                    <div class="col-12 d-flex justify-content-center align-items-center col-sm-auto">
+                                    <div className="col-12 d-flex justify-content-center align-items-center col-sm-auto">
                                         <Newsitem key={i} title={v.title || "No title for that News"} description={v.description || "No description for that news"} src={v.urlToImage} url={v.url} />
                                     </div>
                                 )
