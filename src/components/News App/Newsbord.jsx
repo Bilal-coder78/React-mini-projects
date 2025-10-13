@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import Newsitem from './Newsitem'
+import Spinner from './Spinner'
 
 function Newsbord({ category }) {
     const [articles, setArticles] = useState([])
+    const [spinner,setSpinner] = useState(false)
 
     const fetchNews = async () => {
+        setSpinner(true)
         let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`
         const response = await fetch(url)
         const data = await response.json();
-        console.log(data.articles)
         setArticles(data.articles)
+        setSpinner(false)
     }
 
     useEffect(() => {
@@ -19,7 +22,7 @@ function Newsbord({ category }) {
     return (
         <>
             <div className='text-center fs-3'>Today <span className='bg-danger badge my-3'>News</span></div>
-            {articles.length === 0 ? <><h1 className='d-flex align-items-center justify-content-center mt-5'>Loading News...</h1></> :
+            {spinner ? <Spinner/> :
                 <>
                     <div className="container-fluid">
                         <div className="row justify-content-center">
