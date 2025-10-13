@@ -9,7 +9,7 @@ import Weather from "./components/Weather App/Weather"
 
 
 function App() {
-  const [category, setCategory] = useState("general")
+  const [category, setCategory] = useState("general");
 
   return (
     <div className="">
