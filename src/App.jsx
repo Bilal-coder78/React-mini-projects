@@ -6,6 +6,7 @@ import Nav from "./components/News App/Nav"
 import Newsbord from "./components/News App/Newsbord"
 import Mytodo from "./components/TodoList/Mytodo"
 import Weather from "./components/Weather App/Weather"
+import Type from "./components/Type/Type"
 
 
 function App() {
@@ -13,13 +14,14 @@ function App() {
 
   return (
     <div className="">
-      {/* <Counter/> */}
+      <Counter/>
       {/* <Mytodo/> */}
       {/* <Weather/> */}
       {/* <Form/> */}
       {/* <Movie/> */}
-      <Nav setCategory={setCategory} />
-      <Newsbord category={category} />
+      {/* <Nav setCategory={setCategory} /> */}
+      {/* <Newsbord category={category} /> */}
+      {/* <Type/> */}
     </div>
   )
 }
