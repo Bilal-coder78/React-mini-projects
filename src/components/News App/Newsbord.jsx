@@ -21,7 +21,7 @@ function Newsbord({ category }) {
 
     return (
         <>
-            <div className='text-center fs-3 text-white mt-1'>Today <span className='bg-danger badge my-3'>News</span></div>
+            <div className='text-center fs-3 text-black mt-1'>Today <span className='bg-danger badge my-3'>News</span></div>
             {spinner ? <Spinner/> :
                 <>
                     <div className="container-fluid">
