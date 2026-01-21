@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className="">
-      <Counter/>
+      {/* <Counter/> */}
       {/* <Mytodo/> */}
       {/* <Weather/> */}
       {/* <Form/> */}
       {/* <Movie/> */}
-      {/* <Nav setCategory={setCategory} /> */}
-      {/* <Newsbord category={category} /> */}
+      <Nav setCategory={setCategory} />
+      <Newsbord category={category} />
       {/* <Type/> */}
     </div>
   )

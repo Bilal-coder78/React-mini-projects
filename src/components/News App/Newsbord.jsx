@@ -21,14 +21,14 @@ function Newsbord({ category }) {
 
     return (
         <>
-            <div className='text-center fs-3'>Today <span className='bg-danger badge my-3'>News</span></div>
+            <div className='text-center fs-3 text-white mt-1'>Today <span className='bg-danger badge my-3'>News</span></div>
             {spinner ? <Spinner/> :
                 <>
                     <div className="container-fluid">
                         <div className="row justify-content-center">
                             {articles.map((v, i) => {
                                 return (
-                                    <div className="col-12 d-flex justify-content-center align-items-center col-sm-auto">
+                                    <div className="col-auto d-flex justify-content-center align-items-center">
                                         <Newsitem key={i} title={v.title || "No title for that News"} description={v.description || "No description for that news"} src={v.urlToImage} url={v.url} />
                                     </div>
                                 )
